@@ -1,6 +1,6 @@
 require "httparty"
 
-class Airbrake
+class Airbrake2
 
   include HTTParty
 
@@ -13,7 +13,7 @@ class Airbrake
   def fetch
     project_ids.collect do |project_id|
       self.class.get(
-        "#{protocol}://#{username}.airbrakeapp.com/errors.xml",
+        "#{protocol}://#{username}.airbrakeapp.io/errors.xml",
         {
           :query => {
             :auth_token => auth_token,
