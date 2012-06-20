@@ -1,6 +1,6 @@
 require "httparty"
 
-class Airbrake2
+class Airbrake
 
   include HTTParty
 
