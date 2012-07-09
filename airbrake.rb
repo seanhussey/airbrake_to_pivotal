@@ -17,7 +17,8 @@ class Airbrake
         {
           :query => {
             :auth_token => auth_token,
-            :project_id => project_id
+            :project_id => project_id,
+            :environment => 'production'
           }
         }
       )
